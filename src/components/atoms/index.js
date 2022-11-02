@@ -15,5 +15,5 @@ export default {
   CustomFlex,
   CarImage,
   AbsoluteIcon,
-  DetailListHeader
+  DetailListHeader,
 };
