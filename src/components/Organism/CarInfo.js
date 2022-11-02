@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import Molecule from '../Molecule';
 import Atoms from '../Atoms';
 import { useDetailInfo } from '../../utils/context/DetailInfoStorgeProvider';
+import newCheckedData from '../../utils/newCheckedDate';
+// import convertDateFormat from '../../utils/getDate';
 
 export default function CarInfo({ carInfo }) {
   const navigate = useNavigate();
@@ -12,6 +14,7 @@ export default function CarInfo({ carInfo }) {
     navigate('./detail');
     saveDetailInfo(carInfo);
   };
+  const newLabel = newCheckedData(carInfo.createdAt);
 
   return (
     <Atoms.CustomFlex
@@ -26,11 +29,14 @@ export default function CarInfo({ carInfo }) {
         discription={carInfo.attribute}
         amount={carInfo.amount}
       />
-      <Atoms.CarImage
-        src={carInfo?.attribute?.imageUrl}
-        width='152px'
-        height='80px'
-      />
+      <Atoms.RelativeDiv>
+        {newLabel && <Atoms.NewLabel>신규</Atoms.NewLabel>}
+        <Atoms.CarImage
+          src={carInfo?.attribute?.imageUrl}
+          width='152px'
+          height='80px'
+        />
+      </Atoms.RelativeDiv>
     </Atoms.CustomFlex>
   );
 }

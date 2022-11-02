@@ -6,15 +6,15 @@ export default function DetailTitle({ brand, name, amount }) {
   return (
     <Atoms.CustomFlex direction='column' padding='20'>
       <div>
-        <Atoms.CustomFont fontSize='20' fontWeight='700' lineHeight='24'>
+        <Atoms.CustomFont fontSize='1.25rem' fontWeight='700' lineHeight='24'>
           {brand}
         </Atoms.CustomFont>
-        <Atoms.CustomFont fontSize='24' fontWeight='700' lineHeight='29'>
+        <Atoms.CustomFont fontSize='1.5rem' fontWeight='700' lineHeight='29'>
           {name}
         </Atoms.CustomFont>
       </div>
       <Atoms.CustomFont
-        fontSize='17px'
+        fontSize='1.1rem'
         fontWeight='400'
         lineHeight='21'
         textAlign='end'

@@ -6,7 +6,7 @@ import CarService from '../CarService';
 const CarStorageContext = createContext({
   carStorage: [],
   carType: '',
-  selectedType: () => {}
+  selectedType: () => {},
 });
 
 export const useCarStorage = () => useContext(CarStorageContext);
@@ -15,6 +15,7 @@ export default function CarStorageProvider({ children }) {
   const [carStorage, setCarStorage] = useState([]);
   const [carType, setCarType] = useState(CAR_SIZE_TYPE.ALL);
 
+  const checkedLoading = carStorage.length === 0;
   const filterCarStorage = carStorage.filter(
     (type) => carType === CAR_TYPE_SEGMENT[type.attribute.segment]
   );
@@ -32,7 +33,8 @@ export default function CarStorageProvider({ children }) {
       value={{
         carStorage: carType === '전체' ? carStorage : filterCarStorage,
         carType,
-        selectedType
+        selectedType,
+        checkedLoading,
       }}
     >
       {children}
