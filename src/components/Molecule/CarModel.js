@@ -8,7 +8,9 @@ export default function CarModel() {
 
   return (
     <Atoms.CustomFlex justifyContent='space-between' padding='10'>
-      <Atoms.CustomFont>차종</Atoms.CustomFont>
+      <Atoms.CustomFont fontSize='17' lineHeight='21' fontWeight='700'>
+        차종
+      </Atoms.CustomFont>
       <Atoms.CustomFont margin='0 10px 0 0 '>
         {CAR_TYPE_SEGMENT[detailInfo.attribute.segment]}
       </Atoms.CustomFont>

@@ -10,7 +10,9 @@ export default function AvailableDay() {
 
   return (
     <Atoms.CustomFlex justifyContent='space-between' padding='10'>
-      <Atoms.CustomFont>이용 가능일</Atoms.CustomFont>
+      <Atoms.CustomFont fontSize='17' lineHeight='21' fontWeight='700'>
+        이용 가능일
+      </Atoms.CustomFont>
       <Atoms.CustomFont margin='0 10px 0 0 '>{availableDate}</Atoms.CustomFont>
     </Atoms.CustomFlex>
   );

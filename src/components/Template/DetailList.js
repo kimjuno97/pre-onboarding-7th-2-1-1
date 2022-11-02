@@ -1,19 +1,20 @@
 import React from 'react';
-import Molecule from '../Molecule';
+
 import Atoms from '../Atoms';
+import Organism from '../Organism';
 
 export default function DetailList({ header }) {
   const [type] = Object.keys(header);
-  const showList =
-    header[type] === '차량 정보' ? (
-      <>
-        <Molecule.CarModel />
-        <Molecule.CarfuelType />
-        <Molecule.AvailableDay />
-      </>
-    ) : (
-      ''
-    );
+
+  let showList;
+
+  if (header[type] === '차량 정보') {
+    showList = <Organism.DetailInfo />;
+  } else if (header[type] === '보험') {
+    showList = <Organism.DetailInsurance />;
+  } else if (header[type] === '추가상품') {
+    showList = <Organism.DetailAdditionalProductis />;
+  }
 
   return (
     <div>

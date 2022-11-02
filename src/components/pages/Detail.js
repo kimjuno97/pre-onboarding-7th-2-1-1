@@ -7,7 +7,7 @@ import DETAIL_LIST_HEADER from '../../CONSTANT_DATA/DETAIL_LIST_HEADER';
 
 export default function Detail() {
   const { detailInfo } = useDetailInfo();
-  console.log(detailInfo);
+
   return (
     <section>
       <Template.DetailHeaderTemplate />
