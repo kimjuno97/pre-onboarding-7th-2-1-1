@@ -1,5 +1,12 @@
 import React from 'react';
+import Molecule from '../Molecule';
 
 export default function DetailInfo() {
-  return <div>DetailInfo</div>;
+  return (
+    <>
+      <Molecule.CarModel />
+      <Molecule.CarfuelType />
+      <Molecule.AvailableDay />
+    </>
+  );
 }

@@ -15,7 +15,6 @@
     "semi-spacing": ["error"],
     "curly": ["error"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "comma-dangle": ["error", "never"],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "comma-style": ["error", "last"],
     "import/no-unresolved": ["error", { "commonjs": true, "amd": true }],
@@ -34,11 +33,9 @@
     "react/jsx-no-useless-fragment": "off",
     "camelcase": "off",
     "new-cap": "off",
-    "react/no-unstable-nested-components": "off",
     "react/jsx-props-no-spreading": "off",
     "react/no-children-prop": "off",
     "react/jsx-no-constructed-context-values": "off",
-    "react/destructuring-assignment": "off",
-    "function-paren-newline": "off"
+    "react/destructuring-assignment": "off"
   }
 }
