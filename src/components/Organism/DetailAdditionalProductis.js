@@ -6,7 +6,7 @@ export default function DetailAdditionalProductis() {
   const { detailInfo } = useDetailInfo();
   const { additionalProducts } = detailInfo;
 
-  return additionalProducts.map(({ name, amount }) => (
+  return additionalProducts?.map(({ name, amount }) => (
     <Molecule.AdditionalProducts key={amount} name={name} amount={amount} />
   ));
 }

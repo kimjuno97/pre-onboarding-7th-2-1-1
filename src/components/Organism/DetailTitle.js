@@ -2,7 +2,8 @@ import React from 'react';
 import Atoms from '../Atoms';
 
 export default function DetailTitle({ brand, name, amount }) {
-  const amountPrice = `월 ${amount.toLocaleString()} 원`;
+  const amountPrice = amount && `월 ${amount.toLocaleString()} 원`;
+
   return (
     <Atoms.CustomFlex direction='column' padding='20'>
       <div>

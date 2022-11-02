@@ -26,8 +26,8 @@ export default function CarInfo({ carInfo }) {
       onClick={goToDetail}
     >
       <Molecule.CarDiscription
-        discription={carInfo.attribute}
-        amount={carInfo.amount}
+        discription={carInfo?.attribute}
+        amount={carInfo?.amount}
       />
       <Atoms.RelativeDiv>
         {newLabel && <Atoms.NewLabel>신규</Atoms.NewLabel>}

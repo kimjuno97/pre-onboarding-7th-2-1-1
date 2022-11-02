@@ -1,7 +1,7 @@
 import React from 'react';
 import Atoms from '../Atoms';
 
-export default function AdditionalProducts({ name, amount }) {
+export default function AdditionalProducts({ name, amount = null }) {
   const amountPrice = `월 ${amount.toLocaleString()} 원`;
   return (
     <Atoms.CustomFlex justifyContent='space-between' padding='10'>
