@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import atoms from '../atoms';
 import COMMON_COLOR from '../../CONSTANT_DATA/COMMON_COLOR';
 import CAR_SIZE_TYPE from '../../CONSTANT_DATA/CAR_SIZE_TYPE';
+import { useCarStorage } from '../../utils/context/CarStorageProvider';
 
 export default function Category() {
-  const [selected, setSelected] = useState(0);
-
+  const { carType, selectedType } = useCarStorage();
   return (
     <atoms.TypeContainer>
-      {Object.keys(CAR_SIZE_TYPE).map((type, idx) => {
+      {Object.keys(CAR_SIZE_TYPE).map((type) => {
         const property =
-          selected === idx
+          carType === CAR_SIZE_TYPE[type]
             ? { color: COMMON_COLOR.WHITE, backgroundColor: COMMON_COLOR.BLACK }
             : { color: COMMON_COLOR.BLACK, backgroundColor: COMMON_COLOR.GRAY };
         return (
           <atoms.TypeButton
             key={type}
             {...property}
-            onClick={() => setSelected(idx)}
+            onClick={() => selectedType(CAR_SIZE_TYPE[type])}
           >
             {CAR_SIZE_TYPE[type]}
           </atoms.TypeButton>

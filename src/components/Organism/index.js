@@ -1,3 +1,4 @@
 import Category from './Category';
+import CarInfo from './CarInfo';
 
-export default { Category };
+export default { Category, CarInfo };

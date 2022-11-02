@@ -1,3 +1,4 @@
-import MainTemplate from './MainTemplate';
+import MainHeaderTemplate from './MainHeaderTemplate';
+import MainBodyTemplate from './MainBodyTemplate';
 
-export default { MainTemplate };
+export default { MainHeaderTemplate, MainBodyTemplate };
