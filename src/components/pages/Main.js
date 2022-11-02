@@ -1,5 +1,10 @@
 import React from 'react';
+import MainTemplate from '../Template/MainTemplate';
 
 export default function Main() {
-  return <div>Main</div>;
+  return (
+    <section>
+      <MainTemplate />
+    </section>
+  );
 }
