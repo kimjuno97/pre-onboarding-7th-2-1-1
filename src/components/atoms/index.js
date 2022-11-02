@@ -4,6 +4,8 @@ import HeaderTitle from './HeaderTilte';
 import CustomFont from './CustomFont';
 import CustomFlex from './CustomFlex';
 import CarImage from './CarImage';
+import AbsoluteIcon from './AbsoluteIcon';
+import DetailListHeader from './DetailListHeader';
 
 export default {
   TypeButton,
@@ -11,5 +13,7 @@ export default {
   HeaderTitle,
   CustomFont,
   CustomFlex,
-  CarImage
+  CarImage,
+  AbsoluteIcon,
+  DetailListHeader
 };
