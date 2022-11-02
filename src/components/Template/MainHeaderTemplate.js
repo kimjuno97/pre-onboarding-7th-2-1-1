@@ -1,12 +1,12 @@
 import React from 'react';
 import Organism from '../Organism';
-import atoms from '../atoms';
+import Atoms from '../Atoms';
 
 export default function MainHeaderTemplate() {
   return (
-    <div>
-      <atoms.HeaderTitle>전체차량</atoms.HeaderTitle>
+    <header>
+      <Atoms.HeaderTitle>전체차량</Atoms.HeaderTitle>
       <Organism.Category />
-    </div>
+    </header>
   );
 }
