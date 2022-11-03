@@ -1,5 +1,5 @@
 import React from 'react';
-import Page1 from './Helmet/Helmet';
+import HeaderTilte from './Helmet/HeaderTilte';
 
 import Router from './Router';
 import GlobalStyle from './styles/GlobalStyle';
@@ -11,7 +11,7 @@ export default function App() {
     <CarStorageProvider>
       <DetailInfoProvider>
         <GlobalStyle />
-        <Page1 />
+        <HeaderTilte />
         <Router />
       </DetailInfoProvider>
     </CarStorageProvider>
