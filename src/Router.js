@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Detail from './components/pages/Detail';
-import Main from './components/pages/Main';
+import Detail from './components/Pages/Detail';
+import Main from './components/Pages/Main';
 
 export default function Router() {
   return (

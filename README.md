@@ -19,6 +19,11 @@
 ```
 📦 src
 ┣ 📂 components /- 하위 컴포넌트
+┃ ┣ 📜 Atoms
+┃ ┣ 📜 Molecule
+┃ ┣ 📜 Organism
+┃ ┣ 📜 Template
+┃ ┣ 📜 Pages
 ┣ 📂 CONSTANT_DATA /- 상수데이터
 ┣ 📂 Helmet /- 메타데이터
 ┣ 📂 image /- svg 아이콘
