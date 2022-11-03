@@ -1,4 +1,6 @@
 import React from 'react';
+import Page1 from './Helmet/Helmet';
+
 import Router from './Router';
 import GlobalStyle from './styles/GlobalStyle';
 import CarStorageProvider from './utils/context/CarStorageProvider';
@@ -9,6 +11,7 @@ export default function App() {
     <CarStorageProvider>
       <DetailInfoProvider>
         <GlobalStyle />
+        <Page1 />
         <Router />
       </DetailInfoProvider>
     </CarStorageProvider>
