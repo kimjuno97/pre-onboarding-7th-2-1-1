@@ -4,7 +4,6 @@ import Molecule from '../Molecule';
 import Atoms from '../Atoms';
 import { useDetailInfo } from '../../utils/context/DetailInfoStorgeProvider';
 import newCheckedData from '../../utils/newCheckedDate';
-// import convertDateFormat from '../../utils/getDate';
 
 export default function CarInfo({ carInfo }) {
   const navigate = useNavigate();

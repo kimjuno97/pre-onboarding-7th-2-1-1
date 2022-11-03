@@ -31,7 +31,8 @@ export default function CarStorageProvider({ children }) {
   return (
     <CarStorageContext.Provider
       value={{
-        carStorage: carType === '전체' ? carStorage : filterCarStorage,
+        carStorage:
+          carType === CAR_SIZE_TYPE.ALL ? carStorage : filterCarStorage,
         carType,
         selectedType,
         checkedLoading,
