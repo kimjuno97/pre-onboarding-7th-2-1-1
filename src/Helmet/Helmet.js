@@ -6,7 +6,7 @@ export default function Page1() {
     <div>
       <Helmet>
         <title>모두의 카</title>
-        <meta property='og:title' content='콘텐츠 제목' />
+        <meta property='og:title' content='전국민 런탈 서비스 모두의 카' />
         <meta
           property='og:url'
           content='https://kimjuno97.github.io/pre-onboarding-7th-2-1-1/'
