@@ -8,20 +8,20 @@ export default function CarDiscription({ discription, amount }) {
   const priceDiscription = `월 ${amount.toLocaleString()} 원 부터`;
 
   return (
-    <Atoms.CustomFlex direction='column' gap='10'>
+    <Atoms.CustomFlex direction='column' gap={10}>
       <div>
-        <Atoms.CustomFont fontSize='0.875rem' fontWeight='700' lineHeight='17'>
+        <Atoms.CustomFont fontSize='0.875rem' fontWeight='700' lineHeight={17}>
           {brand}
         </Atoms.CustomFont>
-        <Atoms.CustomFont fontSize='0.875rem' fontWeight='700' lineHeight='17'>
+        <Atoms.CustomFont fontSize='0.875rem' fontWeight='700' lineHeight={17}>
           {name}
         </Atoms.CustomFont>
       </div>
       <div>
-        <Atoms.CustomFont fontSize='0.75rem' fontWeight='500' lineHeight='15'>
+        <Atoms.CustomFont fontSize='0.75rem' fontWeight='500' lineHeight={15}>
           {`${CAR_TYPE_SEGMENT[segment]} / ${CAR_FUEL_TYPE[fuelType]}`}
         </Atoms.CustomFont>
-        <Atoms.CustomFont fontSize='0.75rem' fontWeight='500' lineHeight='15'>
+        <Atoms.CustomFont fontSize='0.75rem' fontWeight='500' lineHeight={15}>
           {priceDiscription}
         </Atoms.CustomFont>
       </div>

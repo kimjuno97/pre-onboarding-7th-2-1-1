@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { TypeFont } from '../../types/index';
 
-const CustomFont = styled.div`
+const CustomFont = styled.div<TypeFont>`
   margin: ${({ margin }) => margin};
   color: #000000;
   font-size: ${({ fontSize }) => fontSize};

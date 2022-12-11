@@ -14,7 +14,7 @@ export default function DetailHeaderTemplate() {
       <Atoms.AbsoluteIcon
         src={backArrow}
         alt='뒤로가기'
-        left='10'
+        left={10}
         onClick={() => navigate('/')}
       />
       <Atoms.HeaderTitle>차량상세</Atoms.HeaderTitle>

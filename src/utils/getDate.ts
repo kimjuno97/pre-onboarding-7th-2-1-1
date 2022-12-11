@@ -1,4 +1,4 @@
-export default function convertDateFormat(strDate) {
+export default function convertDateFormat(strDate: string) {
   const dateArry = new Date(strDate)
     .toLocaleDateString()
     .replace(/\./g, '')

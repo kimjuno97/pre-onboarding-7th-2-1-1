@@ -19,7 +19,7 @@ export default function CarInfo({ carInfo }) {
     <Atoms.CustomFlex
       justifyContent='space-between'
       alignItems='center'
-      padding='20'
+      padding={20}
       borderBottom='1px solid black'
       cursor='pointer'
       onClick={goToDetail}

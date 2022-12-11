@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { TypeBtn } from '../../types';
 
-const TypeButton = styled.button`
+const TypeButton = styled.button<TypeBtn>`
   display: flex;
   justify-content: center;
   align-items: center;

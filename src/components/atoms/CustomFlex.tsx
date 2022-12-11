@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { TypeFlex } from '../../types';
 
-const CustomFlex = styled.div`
+const CustomFlex = styled.div<TypeFlex>`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   gap: ${({ gap }) => `${gap}px`};

@@ -7,8 +7,8 @@ export default function CarModel() {
   const { detailInfo } = useDetailInfo();
 
   return (
-    <Atoms.CustomFlex justifyContent='space-between' padding='10'>
-      <Atoms.CustomFont fontSize='1.1rem' lineHeight='21' fontWeight='700'>
+    <Atoms.CustomFlex justifyContent='space-between' padding={10}>
+      <Atoms.CustomFont fontSize='1.1rem' lineHeight={21} fontWeight='700'>
         차종
       </Atoms.CustomFont>
       <Atoms.CustomFont margin='0 10px 0 0 '>

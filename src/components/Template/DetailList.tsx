@@ -3,7 +3,11 @@ import React from 'react';
 import Atoms from '../Atoms';
 import Organism from '../Organism';
 
-export default function DetailList({ header }) {
+interface TypeProps {
+  [key: string]: string;
+}
+
+export default function DetailList({ header }: { header: TypeProps }) {
   const [type] = Object.keys(header);
 
   let showList;

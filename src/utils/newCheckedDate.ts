@@ -1,4 +1,4 @@
-export default function newCheckedData(date) {
+export default function newCheckedData(date: string) {
   const thisDate = new Date(date)
     .toLocaleDateString()
     .split(' ')

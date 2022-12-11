@@ -2,7 +2,7 @@ import client from './CustomAxios';
 
 class CarService {
   getCarList() {
-    return client.get();
+    return client.get('/cars');
   }
 }
 

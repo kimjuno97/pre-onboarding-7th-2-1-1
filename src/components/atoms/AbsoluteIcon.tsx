@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { TypeAbsolute } from '../../types/index';
 
-const AbsoluteIcon = styled.img`
+const AbsoluteIcon = styled.img<TypeAbsolute>`
   position: absolute;
   height: 1.4375rem;
   top: ${({ top }) => `${top}px`};

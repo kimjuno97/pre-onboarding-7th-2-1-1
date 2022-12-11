@@ -6,8 +6,8 @@ import CAR_FUEL_TYPE from '../../CONSTANT_DATA/CAR_FUEL_TYPE';
 export default function CarfuelType() {
   const { detailInfo } = useDetailInfo();
   return (
-    <Atoms.CustomFlex justifyContent='space-between' padding='10'>
-      <Atoms.CustomFont fontSize='1.1rem' lineHeight='21' fontWeight='700'>
+    <Atoms.CustomFlex justifyContent='space-between' padding={10}>
+      <Atoms.CustomFont fontSize='1.1rem' lineHeight={21} fontWeight='700'>
         연료
       </Atoms.CustomFont>
       <Atoms.CustomFont margin='0 10px 0 0 '>
