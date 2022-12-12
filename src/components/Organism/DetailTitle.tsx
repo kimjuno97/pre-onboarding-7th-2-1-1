@@ -1,7 +1,13 @@
 import React from 'react';
 import Atoms from '../Atoms';
 
-export default function DetailTitle({ brand, name, amount }) {
+interface TypeProps {
+  brand: string;
+  name: string;
+  amount: number;
+}
+
+export default function DetailTitle({ brand, name, amount }: TypeProps) {
   const amountPrice = amount && `월 ${amount.toLocaleString()} 원`;
 
   return (

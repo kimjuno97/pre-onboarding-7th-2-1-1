@@ -18,7 +18,7 @@ export default function Category() {
           <Atoms.TypeButton
             key={type}
             {...property}
-            onClick={() => selectedType(CAR_SIZE_TYPE[type])}
+            onClick={() => selectedType && selectedType(CAR_SIZE_TYPE[type])}
           >
             {CAR_SIZE_TYPE[type]}
           </Atoms.TypeButton>

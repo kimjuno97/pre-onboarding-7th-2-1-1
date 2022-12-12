@@ -12,7 +12,7 @@ export default function CarModel() {
         차종
       </Atoms.CustomFont>
       <Atoms.CustomFont margin='0 10px 0 0 '>
-        {CAR_TYPE_SEGMENT[detailInfo.attribute.segment]}
+        {detailInfo && CAR_TYPE_SEGMENT[detailInfo.attribute.segment]}
       </Atoms.CustomFont>
     </Atoms.CustomFlex>
   );

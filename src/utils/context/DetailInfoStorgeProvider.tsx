@@ -1,19 +1,22 @@
 import React, { createContext, useContext, useState } from 'react';
 import { TypeCarInfo } from '../../types/index';
 
-interface TypeDetailInfoCOntext {
+interface TypeDetailInfoContext {
   detailInfo: TypeCarInfo | null;
-  saveDetailInfo: (type: TypeCarInfo) => void;
+  saveDetailInfo: ((type: TypeCarInfo) => void) | null;
 }
 
-const DetailInfoCOntext = createContext<TypeDetailInfoCOntext | null>(null);
+const DetailInfoCOntext = createContext<TypeDetailInfoContext>({
+  detailInfo: null,
+  saveDetailInfo: null,
+});
 
 export const useDetailInfo = () => useContext(DetailInfoCOntext);
 
 export default function DetailInfoProvider({
   children,
 }: {
-  children: JSX.Element;
+  children: React.ReactNode;
 }) {
   const [detailInfo, setDetailInfo] = useState<TypeCarInfo | null>(null);
 

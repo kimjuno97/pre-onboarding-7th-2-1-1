@@ -3,7 +3,21 @@ import CAR_FUEL_TYPE from '../../CONSTANT_DATA/CAR_FUEL_TYPE';
 import CAR_TYPE_SEGMENT from '../../CONSTANT_DATA/CAR_TYPE_SEGMENT';
 import Atoms from '../Atoms';
 
-export default function CarDiscription({ discription, amount }) {
+interface TypeDiscription {
+  brand: string;
+  name: string;
+  segment: string;
+  fuelType: string;
+  imageUrl: string;
+}
+
+export default function CarDiscription({
+  discription,
+  amount,
+}: {
+  discription: TypeDiscription;
+  amount: number;
+}) {
   const { brand, name, segment, fuelType } = discription;
   const priceDiscription = `월 ${amount.toLocaleString()} 원 부터`;
 

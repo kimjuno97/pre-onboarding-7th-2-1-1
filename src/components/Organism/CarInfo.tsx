@@ -4,14 +4,15 @@ import Molecule from '../Molecule';
 import Atoms from '../Atoms';
 import { useDetailInfo } from '../../utils/context/DetailInfoStorgeProvider';
 import newCheckedData from '../../utils/newCheckedDate';
+import { TypeCarInfo } from '../../types/index';
 
-export default function CarInfo({ carInfo }) {
+export default function CarInfo({ carInfo }: { carInfo: TypeCarInfo }) {
   const navigate = useNavigate();
   const { saveDetailInfo } = useDetailInfo();
 
   const goToDetail = () => {
     navigate('./detail');
-    saveDetailInfo(carInfo);
+    saveDetailInfo && saveDetailInfo(carInfo);
   };
   const newLabel = newCheckedData(carInfo.createdAt);
 

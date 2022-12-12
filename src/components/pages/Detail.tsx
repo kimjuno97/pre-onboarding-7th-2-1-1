@@ -25,14 +25,15 @@ export default function Detail() {
         width='100%'
         height='auto'
       />
-      <Organism.DetailTitle
-        brand={detailInfo?.attribute.brand}
-        name={detailInfo?.attribute.name}
-        amount={detailInfo?.amount}
-      />
+      {detailInfo && (
+        <Organism.DetailTitle
+          brand={detailInfo.attribute.brand}
+          name={detailInfo.attribute.name}
+          amount={detailInfo.amount}
+        />
+      )}
       {detailInfo &&
         DETAIL_LIST_HEADER.map((header, idx) => (
-          // eslint-disable-next-line react/no-array-index-key
           <Template.DetailList key={idx} header={header} />
         ))}
     </section>

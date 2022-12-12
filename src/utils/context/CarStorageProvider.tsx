@@ -11,7 +11,12 @@ interface TypeCarStorageContext {
   checkedLoading: boolean | null;
 }
 
-const CarStorageContext = createContext<TypeCarStorageContext | null>(null);
+const CarStorageContext = createContext<TypeCarStorageContext>({
+  carStorage: [],
+  carType: '',
+  selectedType: null,
+  checkedLoading: null,
+});
 
 export const useCarStorage = () => useContext(CarStorageContext);
 

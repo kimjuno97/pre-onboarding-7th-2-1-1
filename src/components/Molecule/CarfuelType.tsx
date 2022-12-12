@@ -11,7 +11,7 @@ export default function CarfuelType() {
         연료
       </Atoms.CustomFont>
       <Atoms.CustomFont margin='0 10px 0 0 '>
-        {CAR_FUEL_TYPE[detailInfo.attribute.fuelType]}
+        {detailInfo && CAR_FUEL_TYPE[detailInfo.attribute.fuelType]}
       </Atoms.CustomFont>
     </Atoms.CustomFlex>
   );

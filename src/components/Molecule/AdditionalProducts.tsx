@@ -1,12 +1,12 @@
 import React from 'react';
 import Atoms from '../Atoms';
 
-// TODO: 아직 모름 타입
 export default function AdditionalProducts({
   name,
-  amount = null,
+  amount,
 }: {
   name: string;
+  amount: number;
 }) {
   const amountPrice = `월 ${amount.toLocaleString()} 원`;
   return (

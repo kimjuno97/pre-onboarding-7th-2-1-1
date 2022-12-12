@@ -5,8 +5,10 @@ import convertDateFormat from '../../utils/getDate';
 //TODO: 아직모름 타입
 export default function AvailableDay() {
   const { detailInfo } = useDetailInfo();
-  const formattedDate = convertDateFormat(detailInfo.startDate);
-  const availableDate = `${formattedDate[0]}월 ${formattedDate[1]}일 (${formattedDate[2]}) 부터`;
+  const formattedDate = detailInfo && convertDateFormat(detailInfo.startDate);
+  const availableDate =
+    formattedDate &&
+    `${formattedDate[0]}월 ${formattedDate[1]}일 (${formattedDate[2]}) 부터`;
 
   return (
     <Atoms.CustomFlex justifyContent='space-between' padding={10}>
